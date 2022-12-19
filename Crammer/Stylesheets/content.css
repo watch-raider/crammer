@@ -1,0 +1,66 @@
+#modal1996maw {
+    /* some styles to position the modal at the center of the page */
+    position: fixed;
+    top: 20%;
+    width: 250px; 
+    max-height: 60%;
+    min-width: 225px;
+    background-color: #ffffff;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    /* needed styles for the overlay */
+    resize: both;
+    z-index: 2147483638; /* Specify a stack order in case you're using a different order for other elements */
+    /*cursor: pointer;*/ /* Add a pointer on hover */
+    padding: 0px 0px 5px 0px;
+    /* box-shadow: 0 4px 6px 0 hsla(0, 0%, 0%, 0.2); */
+    text-decoration: none;
+    opacity: 0.94;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 14px;
+}
+
+#header-btn-maw {
+  font-weight: bold;
+  font-size: 24px;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  border: none;
+  cursor: pointer;
+  overflow: hidden;
+  outline: none;
+  float: right;
+  top: 0;
+}
+
+#modal1996maw:hover {
+    opacity: 1;
+    /* box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2); */
+    box-shadow: 0 4px 6px 0 hsla(0, 0%, 0%, 0.2);
+}
+
+#headerDivMaw {
+    cursor: move;
+    position: sticky;
+    top: 0;
+    margin: 0px;
+    font-size: 18px;
+}
+
+/* Fading animation */
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 0.94}
+  }
+  
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 0.94}
+  }

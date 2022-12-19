@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Crammer</title>
+    <link rel="stylesheet" href="Stylesheets/w3.css">
+    <link rel="stylesheet" href="Stylesheets/popup.css">
+    <link rel="stylesheet" href="Stylesheets/fontawesome.min.css">
+    <link rel="stylesheet" href="Stylesheets/solid.min.css">
+    <link rel="stylesheet" href="Stylesheets/google-fonts.css">
+</head>
+
+<body style="width: 320px" class="addTopBorder">
+    <div class="w3-border-bottom">
+        <h5 id="popupHeader"><img src="Images/icon32.png" class="w3-circle w3-image" alt="Crammer logo"
+                style="margin-right: 5px">Crammer for Chrome</h5>
+    </div>
+    <div class="popupContainer">
+        <div class="w3-container popupContainer">
+            <p class="descriptionText">Analyses text on current webpage to find key phrases:</p>
+            <p>
+                <input class="w3-button w3-teal w3-round moveright" type="submit" id="analysisBtn" value="Analyse">
+            <div id="analyseSpinner" class="loader moveright"></div>
+            </p>
+        </div>
+        <div class="w3-container popupContainer">
+            <p class="descriptionText">Toggle switch to hide or show analysis panel:</p>
+            <p>
+                <label class="switch moveright">
+                    <input id="hideBtn" type="checkbox">
+                    <span class="slider round"></span>
+                </label>
+            </p>
+        </div>
+        <div class="w3-container popupContainer">
+            <p class="descriptionText">The language of the text is:</p>
+            <p>
+            <div class="w3-dropdown-hover w3-right">
+                <button id="languageBtn" class="w3-button w3-teal w3-round moveright">English</button>
+                <div class="w3-dropdown-content w3-bar-block w3-card-4" style="overflow-y:scroll;height: 100px;right:0">
+                    <a id="en" class="w3-bar-item list-item">English</a>
+                    <a id="es" class="w3-bar-item list-item">Spanish</a>
+                    <a id="de" class="w3-bar-item list-item">German</a>
+                    <a id="it" class="w3-bar-item list-item">Italian</a>
+                    <a id="ja" class="w3-bar-item list-item">Japanese</a>
+                    <a id="ko" class="w3-bar-item list-item">Korean</a>
+                    <a id="pt-PT" class="w3-bar-item list-item">Portugues</a>
+                    <a id="ru" class="w3-bar-item list-item">Russian</a>
+                </div>
+            </div>
+            </p>
+        </div>
+    </div>
+    <div>
+        <a target="_blank" href="https://www.amazon.co.uk/hz/audible/mlp?ie=UTF8&actionCode=AMN30DFT1Bk06604291990WX&tag=079301-21">
+            <img src="Images/audible_banner.png" alt="Audible" style="width:320px;height:50px;">
+        </a>
+    </div>
+    <footer class="w3-container">
+        <p class="rating" style="text-align: center; margin-bottom: 0;">
+            <i id="star5" class="fas fa-star checked"></i>
+            <i id="star4" class="fas fa-star checked"></i>
+            <i id="star3" class="fas fa-star checked"></i>
+            <i id="star2" class="fas fa-star checked"></i>
+            <i id="star1" class="fas fa-star checked"></i>
+        </p>
+        <p style="text-align: center; margin-top: 0;">
+            <a id="website-link" href="https://crammer.app/" target="_" >visit www.crammer.app</a>
+        </p>
+    </footer>
+    <!-- The overlay -->
+    <div id="myNav" class="overlay">
+
+        <!-- Button to close the overlay navigation -->
+        <a id="overlay-close-btn" class="overlay-link" href="#" class="closebtn">&times;</a>
+
+        <!-- Overlay content -->
+        <div class="overlay-content">
+            <div id="feedback-rating" class="rating-options">
+                <p class="overlay-message">Thanks! Can you help us improve with any feedback?</p>
+                <a href="https://form.jotform.com/193634505342355" target="_blank">
+                    <input class="w3-button w3-teal w3-round" type="submit" value="Feedback">
+                </a>
+            </div>
+            <div id="review-rating" class="rating-options">
+                <p class="overlay-message">Thanks! Can you possibly rate us on the Chrome Web Store?</p>
+                <a href="https://chrome.google.com/webstore/detail/crammer-save-time-using-a/gedoeahblpgnpabmilljcmenaidbmjpn"
+                    target="_blank">
+                    <input class="w3-button w3-teal w3-round" type="submit" value="Review">
+                </a>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="Scripts/oauth.js"></script>
+    <script src="Scripts/popup-code.js"></script>
+    <script src="Scripts/popup.js"></script>
+</body>
+
+</html>
